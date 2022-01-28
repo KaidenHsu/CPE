@@ -5,7 +5,7 @@ using namespace std;
 
 int main(void)
 {
-  int  i, n, m, max_index, runcase = 0;
+  int  i, n, m, runcase = 0;
   string answer, output, input;
   bool ac, pe;
 
@@ -28,11 +28,11 @@ int main(void)
 
     ac = true;
     if(output.compare(answer)) ac = false;
+
     if (ac) {
       printf("Run #%d: Accepted\n", ++runcase);
       continue;
     }
-    pe = true;
 
     for (i = 0; i < answer.length(); ++i) {
       if(!isdigit(answer[i]))
@@ -44,8 +44,7 @@ int main(void)
         output.erase(i, 1), i--;
     }
 
-    // max_index = max(m, n);
-
+    pe = true;
     if(answer != output) pe = false;
     if (pe) {
       printf("Run #%d: Presentation Error\n", ++runcase);
