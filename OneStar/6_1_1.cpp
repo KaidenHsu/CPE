@@ -1,20 +1,20 @@
 #include <iostream>
-#include <ctype.h>
+#include <cctype>
 using namespace std;
 
 int main(void)
 {
-  int count[1000] = {0}, length;
+  int count[256] = {0}, len;
   char c;
 
   while(cin >> c){
     count[toupper(c)]++;
-    length++;
+    len++;
   }
 
-  while(length--){
+  while(len--){
     for(c = 'A'; c <= 'Z'; c++){
-      if (count[c] == length) {
+      if (count[c] == len) {
         cout << c << " " << count[c] << endl;
       }
     }
