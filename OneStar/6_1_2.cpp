@@ -1,6 +1,6 @@
 #include <iostream>
-#include <stdio.h>
-#include <string.h>
+#include<cctype>
+#include <cstring>
 using namespace std;
 
 int main(void)
@@ -11,12 +11,7 @@ int main(void)
     c = tolower(c);
     char *p = strchr(s,c);
 
-    if (p) {
-      cout << *(p - 2);
-    }else{
-      cout << c;
-    }
+    if (p) cout << *(p - 2);
+    else cout << c;
   }
-
-  return 0;
 }

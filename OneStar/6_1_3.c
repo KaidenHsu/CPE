@@ -1,19 +1,18 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(int argc, char *argv[])
+int main()
 {
   char n[11];
 
-  while(scanf("%s", n) != EOF && n[0] != 48){
+  while(scanf("%s", n) != EOF && n[0] != '0'){
     while(strlen(n) != 1){
-      int i = 0, F = 0;
-      for(i = 0 ; i < strlen(n) ; i++)
-        F += (n[i] -48);
+      int F = 0;
+      for(int i = 0 ; i < strlen(n) ; i++) F += (n[i] - '0');
       memset(n,'\0', 11);
-      sprintf(n, "%d",F);
+      sprintf(n, "%d", F); //int -> string
     }
-    printf("%s", n);
+
+    printf("%s\n", n);
   }
-  return 0;
 }
