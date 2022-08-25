@@ -17,6 +17,6 @@ This repository is a set of solution to CPE test question bank written in C, C++
 |Three Stars|[⭐️⭐️⭐️][three]|
 
 
-[one]:https://github.com/KaidenHsu/CPE/tree/master/OneStar
-[two]:https://github.com/KaidenHsu/LeetCode/blob/main/2.Medium
-[three]:https://github.com/KaidenHsu/LeetCode/blob/main/3.Hard
+[one]:https://github.com/KaidenHsu/CPE/tree/master/1.OneStar
+[two]:https://github.com/KaidenHsu/CPE/tree/master/2.TwoStars
+[three]:https://github.com/KaidenHsu/CPE/tree/master/3.ThreeStars
